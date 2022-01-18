@@ -10,18 +10,13 @@ public:
         for(int j=0;j<n;j++)
         {
             sum+=nums[j];
-            if(sum>=target)
-            {
-                while(sum>=target)
+            while(sum>=target)
                 {
                      sum-=nums[i];
                      ans=min(ans,j-i+1);
                      i++; 
                 }
-               
-            }
-            
-            
+
         }
         return i==0?0:ans;
     }
