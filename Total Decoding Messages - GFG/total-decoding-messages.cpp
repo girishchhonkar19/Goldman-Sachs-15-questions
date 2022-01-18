@@ -12,8 +12,6 @@ class Solution {
 		    dp[0]=1;
 		    dp[1]=1;
 		   
-		    if(n==1 && str[0]!='0')
-		    return 1;
 		    if(str[0]=='0')
 		    return 0;
 		    
